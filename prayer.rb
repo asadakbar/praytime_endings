@@ -1,8 +1,8 @@
 require_relative "extractor"
 
-$PAGE = "current_month.html"
+CURRENT_MONTH_PAGE = "current_month.html"
 
-e = Extractor.new($PAGE)
+e = Extractor.new(CURRENT_MONTH_PAGE)
 e.parse_times!
 
 puts "Maghrib is qadha at #{e.maghrib_qadha_time}."
